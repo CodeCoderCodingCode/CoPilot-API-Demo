@@ -1,4 +1,5 @@
 CoPilot-API-Demo
+
 This repository contains everything needed to create a website that displays information about any GitHub project using the GitHub CoPilot API.
 
 Note:
