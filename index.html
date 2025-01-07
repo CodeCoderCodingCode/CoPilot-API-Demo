@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frage den Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Frage den Copilot</h1>
+    <label for="ownerField">Nenne den Repo-Ersteller:</label>
+    <input type="text" id="ownerField" placeholder="Repo-Ersteller...">
+    <label for="repoField">Nenne das Wunsch-Repo:</label>
+    <input type="text" id="repoField" placeholder="Wunsch-Repo...">
+    <div class="button-container">
+        <button id="submitButton">Senden</button>
+        <button id="copyButton" disabled>Kopieren</button>
+    </div>
+    <div id="responseField"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

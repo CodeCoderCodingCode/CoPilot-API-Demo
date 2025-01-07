@@ -1,0 +1,110 @@
+/* Das Hintergrundbild, das die gesamte Seite füllt */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('public/background.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Bild wird skaliert, um die Seite zu füllen */
+    background-position: center; /* Bild wird zentriert */
+    background-repeat: no-repeat; /* Bild wird nicht wiederholt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; /* Hintergrundbild bleibt fixiert beim Scrollen */
+}
+
+.container {
+    background-color: rgba(5, 5, 5, 0.9); /* Schwarze, halbtransparente Hintergrundfarbe für Kontrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fefec5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#responseField {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #b9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    animation: fadeIn 1.5s ease-in-out;
+}
